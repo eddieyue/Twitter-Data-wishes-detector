@@ -11,7 +11,7 @@ The following bit of simple code to show how to extract and display them.
 from DAL import create
 #create a handle to the Twitter wishes dataset
 wishes_labelled=DAL.create("wishes-labelled")
-#creates the Labelled Wishes DAL.
+#loading the Twitter wishes data
 wishes_labelled.subsets()->list(str)
 #returns the subsets of this dataset that are available.
 wishes_labelled.iter(subset:str)-> iterable(dict(text:str,id:str,label:str))
