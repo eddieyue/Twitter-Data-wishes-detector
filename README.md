@@ -9,15 +9,18 @@ The following bit of simple code to show how to extract and display them.
 
 ```python
 from DAL import create
-#create a handle to the Twitter wishes dataset
+
+# Create a handle to the Twitter wishes dataset
 wishes_labelled=DAL.create("wishes-labelled")
-#loading the Twitter wishes data
-wishes_labelled.subsets()->list(str)
-#returns the subsets of this dataset that are available.
+
+# Load all labelled tweets, returns the subsets of this dataset that are available
+wishes_labelled.subsets()
+
+# Yields every tweet in the given subset.
 wishes_labelled.iter(subset:str)-> iterable(dict(text:str,id:str,label:str))
-#yields every tweet in the given subset.
+
+# Measures the classification accuracy of the given dictionary of tweet classes.
 wishes_labelled.eval(dict(keys:tweet_id,values:str))->float
-#measures the classification accuracy of the given dictionary of tweet classes.uracy of the given dictionary of tweet classes
 ```
 
 Generate Features
