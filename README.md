@@ -32,3 +32,7 @@ Build a "wish detector"
 =======================
 
 Train L2 regularization logistic regression classier with on the entire set of tweets using stochastic gradient descent as "wish detector". 
+
+Please check the notebook here for detail:
+
+http://nbviewer.ipython.org/github/eddieyue/Twitter-Data-wishes-detector/blob/master/Twitter%20Data%2C%20wishes%20detector.ipynb
