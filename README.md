@@ -33,7 +33,7 @@ Build a "wish detector"
 
 Train L2 regularization logistic regression classier with on the entire set of tweets using stochastic gradient descent as "wish detector". 
 
-Due to the AWS dependency, there are some errors and error rate plot is missing. To submit the notebook on AWS could easily fix this problem.
+Due to the AWS and labelled tweetes data dependency, there are some errors in notebook and error rate plot is missing.  I will fix it as soon as I get the permission to access the data.
 
 Please check the notebook here for detail:
 
