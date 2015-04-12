@@ -26,14 +26,14 @@ wishes_labelled.eval(dict(keys:tweet_id,values:str))->float
 Generate Features
 =================
 
-To classify tweets, I represent tweetes in terms of a vector of features. In order to do so, I build up a dictionary contains words parsing from tweets exclude extremely rare and common words.
+In order to represent every tweet in a quantitative way, I build up a dictionary contains the words parsing from whole tweet dataset but exclude the extremely rare and common items. Then I  express each tweet as a binary vector according to whether has the word from dictionary I have build. Therefore, I have a bunch of very sparse vectors as each tweet has very few words.
 
 Build a "wish detector"
 =======================
 
 Train L2 regularization logistic regression classier with on the entire set of tweets using stochastic gradient descent as "wish detector". 
 
-Due to the AWS and labelled tweetes data dependency, there are some errors in notebook and error rate plot is missing.  I will fix it as soon as I get the permission to access the data.
+Due to the premission to the data, there are some errors in notebook and the error rate plot is missing.  I will fix it as soon as I get the permission to access the data.
 
 Please check the notebook here for detail:
 
